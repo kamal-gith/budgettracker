@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rushdah Budget Expense Tracker</title>
+    <link rel="shortcut icon" type="image/jpg" href="/images/favicon.ico" />
+</head>
+<body>
+    <!-- login page -->
+    <div id='loginPage'>
+        <div class="dashboard">
+            <div class='firstDiv'>
+                <div class='loginlogo'>...Rush<span class='checker'>dah...</span></div>
+                
+                <div class='intro'>Track your Expenses to Stay out of Debt</div>
+            </div>
+            <div class='buttonDiv'>
+                <button id='loginInitiator'>Login Here</button>
+            </div>
+        </div>
+        <div class="midPage">
+            <h6>A Web Application created by @KAMAL</h6>
+            <div class="imgDiv"><img
+
+                    src='images (3).jpg' />
+
+            </div>
+
+            <div class='budgetIntro'>
+
+                <h2>Welcome to Rushdah</h2>
+
+                <p>Rushdah is a web app designed to keep track of all your expenditures. It provides additional features that send timely reminders to your phone or email whenever your bills are due. Get started with the app for Free!</p>
+
+            </div>
+
+        </div>
+
+
+
+        <div id="loginModal" class="modal2">
+
+            <!-- Modal content -->
+
+            <div class="modal-content2">
+
+                <div class='loginDiv'>
+
+                    <form id='login'>
+
+                        <div class='email'>
+
+                            <label for='email'>
+
+                                Email:
+
+                            </label><input name='email' type='text' id='loginEmail' placeholder='kamal@gmail.com'
+
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required><br />
+
+                        </div>
+
+                        <div class='password'>
+
+                            <label for='password'>
+
+                                Password:
+
+                            </label><input name='password' type='password' id='password' required
+
+                                pattern='[a-Z][A-Za-z0-9]{8,}$'>
+
+                        </div>
+
+                        <p class='showPassword'>Show Password</p>
+
+                        <div class="loginButton">
+
+                            <div class='logoutflex'><button>Login</button> </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- welcome page when you login -->
+
+    <div id='welcomePage'>
+
+        <nav class="navbar">
+
+            <div class='name'>...Rush<span class='checker'>dah...</span></div>
+
+            <div class='loginInfo'>
+
+                <div class="log-in">Logged in as:</div>
+
+                <div id='user'></div>
+
+            </div>
+
+            <div class="mini-bar">
+
+                <div class="profile"><span class="night">🌜</span><div class="toggler" id='toggler'></div><span class="day">🌞</span></div>
+
+                <div class='logout'> <button id='logoutButton'>Logout</button></div>
+
+            </div>
+
+        </nav>
+
+
+
+        <div class="display">
+
+            <div class='sidebar'>
+
+                <aside class="menu">
+
+                    <div id='accountMenu' class="menuList"><i class="fas fa-coins"></i> My ACCOUNT</div>
+
+                    <div id='budgetMenu' class="menuList"><i class="fas fa-shekel-sign"></i> My BUDGET</div>
+
+                    <div id='addBudgetMenu' class="menuList"><i class="fas fa-hand-holding-usd"></i> Add BUDGET</div>
+
+                    <div id='addExpenseMenu' class="menuList"><i class="fas fa-shopping-basket"></i> Add EXPENSE</div>
+
+                </aside>
+
+                <button class='stickyLink'>Show Sticky Notes</button>
+
+
+
+                <div class="sticky-notes">
+
+                    <form action="" id="noteForm">
+
+                        <h2 class='stickyHead'>Add a Sticky Note Here</h2>
+
+                        <div class="view-notes">
+
+                            <p class='noteSubmitAlert'></p>
+
+                            <div class='viewnotes'>Click here to view your notes</div>
+
+                        </div><textarea id="notes"></textarea><button type="submit" class="save">Save Your Note</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="work-field">
+
+
+
+                <div class="work-field-header">
+
+                    <div id='expenseDisplay' class="topMenu">Expenses</div>
+
+                    <div id='budgetDisplay' class="topMenu">Budget</div>
+
+                    <div id='accountDisplay' class="topMenu">Account</div>
+
+                </div>
+
+
+
+                <div class="work-field-body">
+
+                    <div class='expenseDefult'>
+
+                        <div class="bd">
+
+                            <div>Budget</div>
+
+                            <div class="budgetAmount">&#8358; 0.00</div>
+
+                        </div>
+
+                        <div class="bd">
+
+                            <div>Expenses</div>
+
+                            <div class="expenseAmount"> 0.00</div>
+
+                        </div>
+
+                        <div class="bd">
+
+                            <div>Balance</div>
+
+                            <div class="balanceAmount"> &#8358; 0.00</div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+                <div class="bd hidden expenseTotalDiv">
+
+                    <div>Total Expenses</div>
+
+                    <div class='bd'> <span class='naira'>&#8358;</span>
+
+                        <div class="expenseTotalClass" id='expenseTotal'> 0.00</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <div class="testDisplay hidden"></div>
+
+        <!-- The Modal -->
+
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+
+            <div class="modal-content">
+
+                <!-- expense modal -->
+
+                <div id="expFormModal">
+
+                    <div class="modal-header">
+
+                        <span class="close">&times;</span>
+
+                        <h2 class='modHeader'>Expense Form</h2>
+
+                    </div>
+
+                    <div class="modal-body">
+
+                        <div class="expense-forms" id="expense-form">
+
+                            <form action="" id="expForm">
+
+                                <div class="expenseDetails">
+
+                                    <label for="expName">Please enter your expense</label> <br />
+
+                                    <input type="text" id="expName" class='inputs' />
+
+                                </div>
+
+                                <div class="expenseDetails">
+
+                                    <label for="expNumber">Please enter the expense amount</label> <br />
+
+                                    <input type="number" id="expNumber" class='inputs' />
+
+                                </div>
+
+                                <button type="submit" id="submitExpen">Add expense</button>
+
+                            </form>
+
+                            <button id="budgetLink">
+
+                                <i class="fas fa-chevron-left"></i>
+
+                                Back to add budget
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- budget form -->
+
+                <div class="budgetHtmlDisplay">
+
+                    <span class="close">&times;</span>
+
+                    <form id='budgetForm'>
+
+                        <div class="budget">
+
+                            <div class="month-div">Monthly Budget<input id="monthly-budget" type="number"
+
+                                    class="inputs nput" required></div>
+
+                            <div class="year-budget">Yearly Budget<p id="yearly-budget"></p>
+
+                            </div>
+
+                            <div class="week-budget">Weekly Budget<p id="weekly-budget"></p>
+
+                            </div>
+
+                            <div class="day-budget">Daily Budget<p id="daily-budget"></p>
+
+                            </div>
+
+                        </div>
+
+                        <button class='budgetFormButton'>Add Budget</button>
+                    </form>
+                </div>
+
+                <!-- note edit form -->
+
+                <div class="edit-form" id="editForm">
+
+                    <div class="modal-header">
+
+                        <span class="close">&times;</span>
+
+                        <h2 class='modHeader'>Note Form</h2>
+
+                    </div>
+
+                    <form action="" id="saveEdit">
+
+                        <div class="editFormInput">
+
+                            <label for="">Edit Note</label> <br />
+
+                            <input type="text" id="editNote" class="inputs editInput" />
+
+                        </div>
+
+                        <button type="submit">Save Changes</button>
+
+                    </form>
+
+                </div>
+
+                <!-- expense edit form -->
+
+                <div class="expenseEdit-form" id="expenseEditForm">
+
+                    <span class="close">&times;</span>
+
+                    <form action="" id="expenseSaveEdit">
+
+                        <div class="expenseEditDetails">
+
+                            <label for="editExpName">Edit your expense</label> <br />
+
+                            <input type="text" id="editExpName" />
+
+                        </div>
+
+                        <div class="expenseEditDetails">
+
+                            <label for="editExpNumber">Edit expense amount</label> <br />
+
+                            <input type="number" id="editExpNumber" />
+
+                        </div>
+
+                        <button type="submit">Save changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>

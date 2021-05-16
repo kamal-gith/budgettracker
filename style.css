@@ -1,0 +1,1646 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+
+  font-family: "Poppins", sans-serif;
+
+  box-sizing: border-box;
+
+  padding: 0;
+
+  margin: 0;
+
+}
+
+#loginPage {
+
+  color: rgb(247, 176, 176);
+
+}
+
+#welcomePage {
+
+  display: none;
+
+}
+
+.navbar {
+
+  display: flex;
+
+  flex-direction: row;
+
+  background: linear-gradient(black, #222628, #7c9399);
+
+  width: 100%;
+
+  color: white;
+
+  margin-bottom: 20px;
+
+  padding-top: 10px;
+
+  padding-bottom: 10px;
+
+}
+
+.topMenu,
+
+.editFormInput label,
+
+.expenseDetails label,
+
+.expenseEditDetails {
+
+  font-size: 18px;
+
+  font-weight: 500;
+
+}
+
+.log-in {
+  margin: auto;
+  font-size: 14px;
+
+}
+
+.mini-bar {
+
+  display: flex;
+
+  flex-direction: row;
+
+  margin-left: auto;
+
+  align-items: center;
+
+  padding-right: 20px;
+
+  padding-left: 10px;
+
+}
+
+.profile {
+
+  margin-right: 10px;
+
+  display: flex;
+
+flex-direction: row;
+
+}
+
+.profile .day, .profile .night {
+
+ font-size: 24px;
+
+}
+
+.toggler{
+
+  background-color: white;
+
+  border: 4px solid blue;
+
+  width: 40px;
+
+  height: 40px;
+
+  border-radius: 50%;
+
+}
+
+.night{
+
+display: none;
+
+}
+
+.profile:hover,
+
+.showPassword:hover,
+
+.menu div,
+
+.work-field-header,
+
+.viewnotes,
+
+.expense-forms button,
+
+.close,
+
+.close2,
+
+#editForm button,
+
+button {
+
+  cursor: pointer;
+
+}
+
+.showPassword {
+
+  margin-left: 20px;
+
+}
+
+
+
+.menu {
+
+  margin-top: 70px;
+
+  margin-bottom: 20px;
+
+  margin-left: 60px;
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+}
+
+.menu div {
+
+  background-color: rgba(70, 71, 73, 0.3);
+
+  color: rgb(70, 71, 73);
+
+  width: 250px;
+
+  margin-bottom: 3px;
+
+  padding-top: 10px;
+
+  padding-bottom: 10px;
+
+  padding-left: 5px;
+
+  border-top-left-radius: 5px;
+
+  border-bottom-left-radius: 5px;
+
+}
+
+
+
+.display {
+
+  display: flex;
+
+  flex-direction: row;
+
+  max-width: 100vw;
+
+}
+
+.work-field {
+
+  margin-top: 30px;
+
+  padding: 20px;
+
+  border: 1px solid;
+
+  border-image: linear-gradient(to bottom, #cccccc, rgba(0, 0, 0, 0)) 1 5%;
+
+  width: 1250px;
+
+  border-radius: 15px;
+
+  box-shadow: 5px -10px 10px -5px #cccccc;
+
+}
+
+.work-field-header {
+
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+
+  font-weight: 600;
+
+  font-size: 18px;
+
+}
+
+.work-field-body div {
+
+  margin-bottom: 20px;
+
+}
+
+.bd {
+
+  display: flex;
+
+  flex-direction: row;
+
+}
+
+.naira {
+
+  margin-right: 5px;
+
+}
+
+.expenseTotalDiv {
+
+  justify-content: space-between;
+
+  font-weight: 600;
+
+  margin-top: 40px;
+
+}
+
+.balanceAmount,
+
+.budgetAmount,
+
+.expenseAmount {
+
+  margin-left: auto;
+
+}
+
+.budgetDeficit {
+
+  color: red;
+
+  text-align: center;
+
+  font-weight: 600;
+
+}
+
+.view-notes {
+
+  text-align: center;
+
+  margin-bottom: 5px;
+
+}
+
+.noteSubmitAlert {
+
+  color: rgb(146, 243, 206);
+
+  font-size: 14px;
+
+}
+
+#noteForm h2 {
+
+  text-align: center;
+
+}
+
+.viewnotes {
+
+  margin-top: 5px;
+
+  font-weight: 250;
+
+  font-size: 18px;
+
+}
+
+.noteFlex {
+
+  display: flex;
+
+  flex-direction: row;
+
+}
+
+.noteDate {
+
+  margin-left: auto;
+
+}
+
+.noresult {
+
+  text-align: center;
+
+}
+
+.noteEditButton {
+
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 10px;
+
+}
+
+.noteEditButton button {
+
+  padding: 5px;
+
+  margin-top: 10px;
+
+}
+
+.noteDiv {
+
+  max-width: 40vw;
+
+  word-wrap: break-word;
+
+}
+
+textarea {
+
+  background: #f7f89f;
+
+  display: block;
+
+  margin: auto;
+
+  min-height: 150px;
+
+}
+
+.save {
+
+  padding: 10px 20px;
+
+  margin-top: 20px;
+
+  display: block;
+
+  margin: auto;
+
+  margin-top: 20px;
+
+  margin-bottom: 20px;
+
+  background: -webkit-linear-gradient(top, #817b7b, #413f3f);
+
+  background-color: #050707;
+
+  color: white;
+
+}
+
+.modHeader,
+
+.stickyHead
+
+{
+
+  background: linear-gradient(white, #cbe58b);
+
+  padding: 10px 5px;
+
+  margin-bottom: 5px;
+
+}
+
+.sticky-notes {
+
+  border: solid 2px #cbe58b;
+
+  margin-left: 60px;
+
+}
+
+.month-div {
+
+  display: flex;
+
+  flex-direction: column;
+
+  font-size: 18px;
+
+}
+
+.year-budget,
+
+.day-budget,
+
+.week-budget {
+
+  background-color: #cdcdcd;
+
+  padding-left: 10px;
+
+  padding-top: 5px;
+
+  border-radius: 5px;
+
+  margin-bottom: 20px;
+
+}
+
+#yearly-budget,
+
+#weekly-budget,
+
+#daily-budget {
+
+  color: red;
+
+  text-align: right;
+
+  min-height: 20px;
+
+}
+
+.expense-forms button {
+
+  background: #010101;
+
+  border: none;
+
+  border-radius: 6px;
+
+  color: #ffffff;
+
+  padding: 10px 30px;
+
+  text-transform: capitalize;
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+}
+
+#expense-form {
+
+  width: 100%;
+
+}
+
+#expenseEditForm {
+
+  padding: 40px 20px;
+
+  width: 100%;
+
+}
+
+.noteimg {
+
+  width: 60px;
+
+  margin-left: 30px;
+
+  display: flex;
+
+  flex-direction: row;
+
+}
+
+img {
+
+  width: 100%;
+
+  object-fit: cover;
+
+}
+
+.fa-trash-alt {
+
+  color: red;
+
+}
+
+.fa-edit {
+
+  color: green;
+
+}
+
+.imgDiv {
+
+  margin-left: 30px;
+
+}
+
+.noteHeader {
+
+  align-self: center;
+
+  font-weight: 600;
+
+  font-size: 20px;
+
+}
+
+.notesContent {
+
+  font-size: 20px;
+
+  font-weight: 500;
+
+}
+
+#notes {
+
+  padding-left: 10px;
+
+  padding-top: 5px;
+
+}
+
+.hidden {
+
+  display: none;
+
+}
+
+.modal {
+
+  display: none;
+
+  position: fixed;
+
+  z-index: 1;
+
+  left: 0;
+
+  top: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  overflow: auto;
+
+  background-color: rgba(0, 0, 0, 0.4);
+
+  animation-name: fadeIn;
+
+  animation-duration: 0.4s;
+
+  text-transform: capitalize;
+
+  font-weight: 600;
+
+}
+
+.modal-content {
+
+  position: fixed;
+
+  top: 20%;
+
+  left: 25%;
+
+  background-color: #fefefe;
+
+  width: 50%;
+
+  min-height: 40px;
+
+  animation-name: slideIn;
+
+  animation-duration: 0.4s;
+
+}
+
+.noteModal-content {
+
+  position: fixed;
+
+  top: 20%;
+
+  left: 25%;
+
+  width: 50%;
+
+  min-height: 40px;
+
+  animation-name: slideIn;
+
+  animation-duration: 0.4s;
+
+}
+
+.modal-header {
+
+  padding: 2px 16px;
+
+  border-bottom: 2px solid gray;
+
+}
+
+.budgetHtmlDisplay {
+
+  padding-left: 20px;
+
+  padding-right: 20px;
+
+}
+
+.budget {
+
+  padding-top: 30px;
+
+}
+
+.close,
+
+.close2 {
+
+  color: white;
+
+  float: right;
+
+  font-size: 28px;
+
+  font-weight: bold;
+
+  color: #000;
+
+}
+
+.modal-body {
+
+  padding: 2px 16px;
+
+}
+
+aside i {
+
+  margin-right: 10px;
+
+  margin-left: 5px;
+
+  color: rgb(91, 91, 182);
+
+}
+
+#budgetLink {
+
+  font-size: 14px;
+
+  background: none;
+
+  color: #04458f;
+
+  margin: 10px 0px 15px 10px;
+
+  text-align: justify;
+
+  padding: 0;
+
+}
+
+.budgetFormButton{
+
+  padding: 10px 20px;
+
+  margin-bottom: 20px;
+
+}
+
+.inputs {
+
+  width: 95%;
+
+  padding: 8px 0;
+
+  border-radius: 6px;
+
+  border: 1px solid gray;
+
+  margin: 20px 0;
+
+  padding: 10px;
+
+  color: #495057;
+
+  outline: 0;
+
+  font-weight: 700;
+
+}
+
+.editInput {
+
+  width: 95%;
+
+}
+
+#expenseEditForm,
+
+#editForm {
+
+  display: none;
+
+  width: 100%;
+
+}
+
+.expenseEditDetails input {
+
+  margin: 10px 0 20px 0;
+
+  max-width: 90%;
+
+  padding: 10px;
+
+  font-weight: 700;
+
+  color: rgb(73, 80, 87);
+
+}
+
+.editFormInput {
+
+  margin: 20px;
+
+  margin-bottom: 10px;
+
+}
+
+.editFormInput input {
+
+  margin-top: 10px;
+
+}
+
+#expenseEditForm button {
+
+  background: #4d2f2f;
+
+  border: none;
+
+  border-radius: 6px;
+
+  padding: 10px 20px;
+
+  outline: none;
+
+}
+
+#editForm button {
+
+  background: #662d2c;
+
+  border: none;
+
+  border-radius: 6px;
+
+  color: #ffffff;
+
+  padding: 10px 30px;
+
+  text-transform: capitalize;
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+  margin-bottom: 40px;
+
+  margin-left: 20px;
+
+}
+
+.expValue {
+
+  display: flex;
+
+  flex-direction: column;
+
+  font-weight: 500;
+
+  justify-content: space-between;
+
+}
+
+.edit_delete_column {
+
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: space-between;
+
+}
+
+.expTitleName {
+
+  word-wrap: break-word;
+
+  max-width: 40%;
+
+}
+
+.expValueAmount {
+
+  word-wrap: break-word;
+
+  max-width: 50%;
+
+}
+
+#edit_delete button {
+
+  padding: 5px;
+
+}
+
+#edit_delete {
+
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: flex-end;
+
+}
+
+.indicator {
+
+  border-bottom: 3px solid #7c9399;
+
+}
+
+.topMenu:hover {
+
+  color: #7c9399;
+
+}
+
+.budgetError {
+
+  text-align: center;
+
+  color: red;
+
+  font-size: 18px;
+
+}
+
+.menuIndicator {
+
+  background-color: #f76060 !important;
+
+  color: white !important;
+
+}
+
+.budgetInput {
+
+  margin-top: 0;
+
+  font-size: 18px;
+
+  font-style: italic;
+
+  border: none;
+
+}
+
+
+
+/* login css */
+
+button a {
+
+  text-decoration: none;
+
+}
+
+.loginlogo {
+
+  font-size: 48px;
+
+  margin-top: 30px;
+
+  font-weight: 700;
+
+  margin-bottom: 62px;
+
+}
+
+.firstDiv {
+
+  color: white;
+
+}
+
+.checker {
+
+  color: rgb(124, 126, 47);
+
+}
+
+.intro {
+
+  font-size: 24px;
+
+  max-width: 350px;
+
+}
+
+
+
+.buttonDiv {
+
+  margin-top: auto;
+
+}
+
+button {
+
+  border-radius: 5px;
+
+  color: rgb(206, 156, 156);
+
+  background: -webkit-linear-gradient(top, #8fc02d, #363735);
+
+  font-size: 16px;
+
+}
+
+.dashboard button {
+
+  box-shadow: 2px 2px 5px white;
+
+  margin-top: 40px;
+
+  margin-right: 100px;
+
+  padding: 10px 10px;
+
+}
+
+.midPage .imgDiv {
+
+  align-self: flex-end;
+
+  width: 400px;
+
+  margin: auto;
+
+  position: relative;
+
+  top: -200px;
+
+  right: -100px;
+
+}
+
+.midPage img {
+
+  width: 100%;
+
+  object-fit: cover;
+
+  height: 300px;
+
+}
+
+.midPage {
+
+  background: -webkit-linear-gradient(top, #dddddd, #dddddd, #dddddd, #ffffff);
+
+}
+
+.budgetIntro {
+
+  max-width: 480px;
+
+  margin-left: 300px;
+
+  position: relative;
+
+  top: -150px;
+
+}
+
+.budgetIntro h2 {
+
+  color: rgb(173, 125, 79);
+
+  font-weight: 400;
+
+  font-size: 36px;
+
+  margin-bottom: 30px;
+
+}
+h6 {
+    color: #1a2325;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.budgetIntro p {
+
+  color: #2a7a7a;
+
+}
+
+.loginDiv label {
+
+  color: rgb(37, 31, 31);
+
+  font-size: 20px;
+
+  font-weight: 300;
+
+  color: rgb(51, 51, 51);
+
+}
+
+.modal2 {
+
+  display: none;
+
+  flex-direction: row;
+
+  justify-content: center;
+
+  align-content: center;
+
+  position: fixed;
+
+  z-index: 1;
+
+  left: 0;
+
+  top: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  overflow: auto;
+
+  background-color: rgba(0, 0, 0, 0.4);
+
+  animation-name: fadeIn;
+
+  animation-duration: 0.4s;
+
+  text-transform: capitalize;
+
+  font-weight: 600;
+
+}
+
+.modal-content2 {
+
+  position: relative;
+
+  margin: auto;
+
+  background: -webkit-linear-gradient(top, #dddddd, #dddddd, #dddddd, #ffffff);
+
+  width: 400px;
+
+  min-height: 40px;
+
+  animation-name: slideIn;
+
+  animation-duration: 0.4s;
+
+  border-radius: 5px;
+
+}
+
+.loginDiv {
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  align-content: space-between;
+
+}
+
+.loginDiv p {
+
+  color: rgb(0, 0, 128);
+
+  font-weight: normal;
+
+  text-align: center;
+
+  position: relative;
+
+  left: 30px;
+
+  font-size: 14px;
+
+}
+
+.loginButton {
+
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: flex-end;
+
+  margin-bottom: 20px;
+
+  margin-top: 20px;
+
+}
+
+.logoutflex {
+
+  width: 100px;
+
+}
+
+.loginDiv button,
+
+#logoutButton {
+
+  padding: 5px 10px;
+
+}
+
+.loginDiv input {
+
+  max-width: 250px;
+
+}
+
+.loginInfo {
+
+  margin: auto;
+
+  display: flex;
+
+  flex-direction: row;
+
+  gap: 10px;
+
+}
+
+.email {
+
+  margin-top: 20px;
+
+  margin-bottom: 20px;
+
+  margin-left: auto;
+
+  color: rgb(51, 51, 51);
+
+  font-weight: normal;
+
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: flex-end;
+
+  margin-right: 10px;
+
+}
+
+input {
+
+  margin-left: 5px;
+
+  border-radius: 7px;
+
+  min-width: 200px;
+
+  color: black;
+
+  padding-left: 10px;
+
+  font-weight: 500;
+
+  font-size: 16px;
+
+}
+
+.password {
+
+  margin-bottom: 10px;
+
+  color: black;
+
+  color: rgb(51, 51, 51);
+
+  font-weight: normal;
+
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: flex-end;
+
+  margin-right: 10px;
+
+}
+
+#user {
+
+  background-color: white;
+
+  font-size: 18px;
+
+  color: black;
+
+  padding-left: 10px;
+
+  padding-right: 10px;
+
+}
+
+#logoutButton {
+
+  background-color: rgb(25, 0, 255);
+
+  margin-left: 30px;
+
+}
+
+.modificationButtons button {
+
+  background: none;
+
+}
+
+.stickyLink {
+
+  display: none;
+
+}
+
+.name {
+
+  font-size: 48px;
+
+  font-weight: 700;
+
+  margin-left: 60px;
+
+}
+
+.dashboard {
+
+  background: linear-gradient(black, #222628, #7c9399);
+
+  min-height: 50vh;
+
+  display: flex;
+
+  flex-direction: row;
+
+  padding-left: 300px;
+
+}
+
+.darkMode{
+
+  background-color: black;
+
+}
+
+.darkModeText{
+
+  color: white;
+
+}
+
+.whiteModeText{
+
+  color: black;
+
+}
+
+.modalBg{
+
+  background-color: #15172a;;;
+
+}
+
+.modHeaderBg {
+
+  background: #090a11;
+
+}
+
+
+
+@media only screen and (max-width: 1500px) {
+
+  .dashboard {
+
+    padding-left: 80px;
+
+  }
+
+  .budgetIntro {
+
+    margin-left: 80px;
+
+  }
+
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+
+  
+
+  .midPage .imgDiv {
+
+    display: none;
+
+  }
+
+  .imgDiv {
+
+    position: relative;
+
+    right: 20px;
+
+  }
+
+  .budgetIntro {
+
+    top: 10px;
+
+  }
+
+  #loginInitiator {
+
+    margin-right: 20px;
+
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .display {
+
+    display: flex;
+
+    flex-direction: column;
+
+  }
+
+  .menu {
+
+    display: flex;
+
+    flex-direction: row;
+
+    margin-top: 0;
+
+    padding-left: 0;
+
+    margin-left: 0;
+
+  }
+
+  .menu div {
+
+    border-right: 1px solid black;
+
+  }
+
+  .navbar {
+
+    margin-bottom: 0;
+
+  }
+
+  .sidebar {
+
+    padding-left: 0;
+
+    margin-left: 0;
+
+  }
+
+  .sticky-notes {
+
+    display: none;
+
+    max-width: 50%;
+
+    margin: auto;
+
+  }
+
+  .stickyLink {
+
+    display: inline;
+
+    padding: 10px 20px;
+
+  }
+
+  .work-field {
+
+    width: 95vw;
+
+    padding-right: 10px;
+
+  }
+
+  .sidebar {
+
+    margin-bottom: 20px;
+
+  }
+
+  .name {
+
+    margin-left: 20px;
+
+  }
+
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+  .menu {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+  .menu div {
+
+    width: auto;
+
+    margin-bottom: 0;
+
+    border-bottom: 1px solid black;
+
+  }
+
+  .loginInfo {
+
+    display: none;
+
+  }
+
+  .navbar {
+
+    width: 100vw;
+
+  }
+
+  .profile {
+
+    margin-right: 5px;
+
+  }
+
+  .stickyLink {
+
+    margin-bottom: 20px;
+
+  }
+
+  .work-field {
+
+    margin-top: 30px;
+
+  }
+
+}
+
+
+
+@media only screen and (max-width: 770px) {
+
+  #welcomePage {
+
+    width: 100vw;
+
+    margin: 0;
+
+  }
+
+  .menu {
+
+    grid-template-columns: auto;
+
+  }
+
+  .navbar {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+  .name {
+
+    grid-column: 1 / -1;
+
+  }
+
+  .mini-bar {
+
+    grid-column: 1 / -1;
+
+  }
+
+  .navbar {
+
+    width: 90vw;
+
+  }
+
+  .display {
+
+    width: 90vw;
+
+  }
+
+  .work-field {
+
+    width: 90vw;
+
+  }
+
+  #loginInitiator {
+
+    padding: 5px 10px;
+
+  }
+
+}
+
+
+
+@media only screen and (max-width: 590px) {
+
+  .dashboard {
+
+    padding-left: 50px;
+
+  }
+
+  .budgetIntro {
+
+    margin-left: 50px;
+
+  }
+
+  .budgetIntro p {
+
+    padding-right: 20px;
+
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .modal-content {
+    width: 80%;
+    left: 10%;
+  }
+  .noteModal-content {
+    left: 10%;
+    width: 80%;
+  }
+
+  .sticky-notes {
+    max-width: 80%;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .dashboard {
+    padding-left: 20px;
+  }
+  .intro {
+    padding-left: 30px;
+  }
+  #loginInitiator {
+    padding: 3px 7px;
+  }
+}
+@media only screen and (min-width: 1001px) {
+  .sticky-notes {
+    display: block;
+  }
+}
